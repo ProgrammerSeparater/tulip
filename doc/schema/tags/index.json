@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+    "title": "Tags",
+    "type": "array",
+    "items": {
+        "title": "Tag",
+        "type": "object",
+        "word": {
+            "type": "string",
+            "description": "Ruby"
+        },
+        "priority": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+        },
+        "source": {
+            "type": "string",
+            "enum": [
+                "workshop"
+            ]
+        },
+        "required": ["word", "priority", "source"]
+    }
+}
